@@ -1,5 +1,18 @@
-# hack-arch
+# hack@arch
 
+# "Innovation is the only way to win"- Steve Jobs
+This project is done as part of abstarct submission of a 36-hours offline hackathon under the aLluring arch of GEC.
+
+# Problem Statement
+Bus Map How to help riders know bus route information
+
+# Solution
+A pamphlet that gives better demonstration of bus route information
+
+# Our goal
+
+
+# Modules Used
 numpy
 Numpy was imported to take data from the webcam of the device.
 
