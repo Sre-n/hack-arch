@@ -57,10 +57,7 @@ like when going to tesseract.
 
 ![image](https://user-images.githubusercontent.com/92539781/174951554-206eb0d0-0e66-4cce-9cbc-379affaef56e.png)
 
-
-![image](https://user-images.githubusercontent.com/92539781/175355560-a9227be7-3c3b-405c-9e57-5553ef1ff1b6.png)
-
-
+![image](https://user-images.githubusercontent.com/92539781/175357172-3768a7c6-5c51-4425-9d0f-a25eb46c63fc.png)
 
 
 Since we are done with object detection, scanning of number plate and character recognition our next aim lies in showing the bus route.
@@ -68,5 +65,5 @@ Here we followed the measure of integrating google map api via google cloud and 
 the complete route
 ♦ gmaps
 
-![image](https://user-images.githubusercontent.com/92539781/175354195-cf5e3123-390b-46e8-9ad5-13f300d316ae.png)
+![image](https://user-images.githubusercontent.com/92539781/175357378-0226a36f-d420-448f-8f50-893aa45da70e.png)
 
