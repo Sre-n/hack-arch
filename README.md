@@ -36,12 +36,15 @@ First step of the process is simply taking the subimage region within the bounds
 majority of the time we use cv2.resize() to blow the image up to 3x its original size. Then we convert the image to grayscale
 and applied a small Gaussian blur to smooth it out. Following this, the image is thresholded to white text with black background 
 and has Otsu's method also applied. This white text on black background helps to find contours of image.
+
 ![image](https://user-images.githubusercontent.com/92539781/175347998-abe38586-35b9-46fa-b179-fe0ac01e1bc7.png)
 
 The image is then dilated using opencv in order to make contours more visible and be picked up in future step.
+
 ![image](https://user-images.githubusercontent.com/92539781/175348083-55a2c042-0543-4cec-95fe-fe19cef2b4f3.png)
 
 Next we use opencv to find all the rectangular shaped contours on the image and sort them left to right.
+
 ![image](https://user-images.githubusercontent.com/92539781/174951625-36ea8084-8229-4bca-8ac9-09ba8a7a362e.png)
 
 In order to filter out the unwanted regions we apply a couple parameters to be met in order to accept a contour. 
@@ -57,13 +60,16 @@ like when going to tesseract.
 
 ![image](https://user-images.githubusercontent.com/92539781/174951554-206eb0d0-0e66-4cce-9cbc-379affaef56e.png)
 
+# Number_Plate_Recognition
 ![image](https://user-images.githubusercontent.com/92539781/175357172-3768a7c6-5c51-4425-9d0f-a25eb46c63fc.png)
 
 
 Since we are done with object detection, scanning of number plate and character recognition our next aim lies in showing the bus route.
 Here we followed the measure of integrating google map api via google cloud and exported a html file to direct to the webpage showing
 the complete route
+
 ♦ gmaps
 
 ![image](https://user-images.githubusercontent.com/92539781/175357378-0226a36f-d420-448f-8f50-893aa45da70e.png)
 
+#
