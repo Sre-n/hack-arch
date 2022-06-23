@@ -40,15 +40,15 @@ The image is then dilated using opencv in order to make contours more visible an
 
 Next we use opencv to find all the rectangular shaped contours on the image and sort them left to right.
 
-[image](https://user-images.githubusercontent.com/92539781/174951625-36ea8084-8229-4bca-8ac9-09ba8a7a362e.png)
+![image](https://user-images.githubusercontent.com/92539781/174951625-36ea8084-8229-4bca-8ac9-09ba8a7a362e.png)
 
 As you can see this causes many contours to be found other than just the contours of each character within the license plate number. In order to filter out the unwanted regions we apply a couple parameters to be met in order to accept a contour. These parameters are just height and width ratios (i.e. the height of region must be at least 1/6th of the total height of the image). A couple other parameters on area of region etc are also placed. Check out code to see exact details. This filtering leaves us with.
 
-[image](https://user-images.githubusercontent.com/92539781/174951593-c07e8357-82ee-4a23-a22a-46ddae695381.png)
+![image](https://user-images.githubusercontent.com/92539781/174951593-c07e8357-82ee-4a23-a22a-46ddae695381.png)
 
 The individual characters of the license plate number are now the only regions of interest left. We segment each subimage and apply a bitwise_not mask to flip the image to black text on white background which Tesseract is more accurate with. The final step is applying a small median blur on the image and then it is passed to Tesseract to get the letter or number from it. Example of how letters look like when going to tesseract.
 
-[image](https://user-images.githubusercontent.com/92539781/174951554-206eb0d0-0e66-4cce-9cbc-379affaef56e.png)
+![image](https://user-images.githubusercontent.com/92539781/174951554-206eb0d0-0e66-4cce-9cbc-379affaef56e.png)
 
 Each letter or number is then just appended together into a string and at the end you get the full license plate that is recognized.
 
