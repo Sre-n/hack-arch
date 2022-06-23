@@ -2,14 +2,21 @@
 
 # "Innovation is the only way to win"- Steve Jobs
 This project is done as part of abstarct submission of a 36-hours offline hackathon under the aLluring arch of GEC.
+![image](https://user-images.githubusercontent.com/92539781/175336796-847088f7-1ba6-45c9-9b5a-8d123b9e7820.png)
+
 
 # Problem Statement
 Bus Map How to help riders know bus route information
 
+
+
 # Solution
 A pamphlet that gives better demonstration of bus route information
 
+
+
 # Our goal
+![image](https://user-images.githubusercontent.com/92539781/175337271-c1fb49a4-aaaf-47a7-89d7-23bcd7136a94.png)
 
 
 # Modules Used
@@ -17,24 +24,16 @@ numpy
 Numpy was imported to take data from the webcam of the device.
 
 tensorflow
-tensorflow was imported to train the data.For our project the number plates of various vehicles was used as data.
+tensorflow was imported to train the data for our project the number plates of various vehicles was used as data.
 
 opencv
 opencv was used to operate the webcam.This module integrates the program with the device being used.
 
-YOLOv4
-YOLOv4 is used to input pretrained weights for object detection.
-
-![image](https://user-images.githubusercontent.com/92539781/174950685-134d36e2-bcd0-494b-8b40-8b6baeaad042.png)
-
 Tesseract OCR
 We have created a custom function to feed Tesseract OCR the bounding box regions of license plates found by custom YOLOv4 model in order to read and extract the license plate numbers. Thorough preprocessing is done on the license plate in order to correctly extract the license plate number from the image. The function that is in charge of doing the preprocessing and text extraction is called recognize_plate and can be found in the file core/utils.py.
 
-First step of the process is taking the bounding box coordinates from YOLOv4 and simply taking the subimage region within the bounds of the box. Since this image is super small the majority of the time we use cv2.resize() to blow the image up 3x its original size.
-
-Then we convert the image to grayscale and apply a small Gaussian blur to smooth it out.
-
-Following this, the image is thresholded to white text with black background and has Otsu's method also applied. This white text on black background helps to find contours of image.
+# Approach
+First step of the process is simply taking the subimage region within the bounds of the box. Since this image is super small majority of the time we use cv2.resize() to blow the image up to 3x its original size. Then we convert the image to grayscale and applied a small Gaussian blur to smooth it out. Following this, the image is thresholded to white text with black background and has Otsu's method also applied. This white text on black background helps to find contours of image.
 
 The image is then dilated using opencv in order to make contours more visible and be picked up in future step.
 
