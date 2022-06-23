@@ -25,8 +25,9 @@ A pamphlet that gives better demonstration of bus route information
 ♦tensorflow
 ♦opencv
 ♦Tesseract OCR
-♦utils
-♦
+♦imutils
+♦skimage
+♦pytesseract
 
 
 # Approach
