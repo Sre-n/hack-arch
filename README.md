@@ -7,7 +7,7 @@ This project is done as part of abstarct submission of a 36-hours offline hackat
 
 
 # ♠ Problem Statement
-Bus Map How to help riders know bus route information
+Bus Map: How to help riders know bus route information
 
 Even though public transport is a much more environmentally friendly transportation option when compared to individual cars, 
 many traditional and historic public transport systems are still using old technology. One of the problem that we thought of was the difficulty in finding
