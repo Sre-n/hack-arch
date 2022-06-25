@@ -6,17 +6,22 @@ This project is done as part of abstarct submission of a 36-hours offline hackat
 ![image](https://user-images.githubusercontent.com/92539781/175336796-847088f7-1ba6-45c9-9b5a-8d123b9e7820.png)
 
 
-# Problem Statement
+# ♠ Problem Statement
 Bus Map How to help riders know bus route information
 
+Even though public transport is a much more environmentally friendly transportation option when compared to individual cars, 
+many traditional and historic public transport systems are still using old technology. One of the problem that we thought of was the difficulty in finding
+the route of a particular bus i,e whether the bus will stop at our desired destination or not. This problem is faced by most of the passengers especially
+at the chaos moment when the bus arrives. So why not we build an application for such passengers wherin they can control everything just at their finger tips.
 
 
-# Solution
+# ♠ Solution
 A pamphlet that gives better demonstration of bus route information
 
+Customers of today are accustomed to instant gratification and having the world at their fingertips. With technology so integrated in their lives,
+today’s customers expect more convenience, more comfort, and more personalisation. So our project would help improve the customer journey by allowing them to 
+check-in in real time route using geolocation. The methodology we adopted to solve the problem was, once the bus approaches, the number plate would be scanned and route map will be shown, this would be a great help for passengers
 
-
-# Our goal
 ![image](https://user-images.githubusercontent.com/92539781/175337271-c1fb49a4-aaaf-47a7-89d7-23bcd7136a94.png)
 
 
